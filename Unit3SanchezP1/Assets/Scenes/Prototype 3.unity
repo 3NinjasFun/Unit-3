@@ -420,7 +420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 70ab0d3e71b54ac4bbd703cb0a686c4d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.98
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400066, guid: 70ab0d3e71b54ac4bbd703cb0a686c4d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -613,7 +613,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8140686ca398ee04eac0d4b4a27fc79e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrerfab: {fileID: 3395545676209846963, guid: ea44450db5e67eb4ba33d66e1bc414b1, type: 3}
+  obstaclePrerfab:
+  - {fileID: 6475580068658570578, guid: 06fb5f03809f35e40aaf46acf09a3f37, type: 3}
+  - {fileID: 6479820357062945181, guid: e3b18676f8ed61e41a3355814838bd3e, type: 3}
+  - {fileID: 3395545676209846963, guid: ea44450db5e67eb4ba33d66e1bc414b1, type: 3}
+  - {fileID: 1032298766375117518, guid: 27c3aaf11a8021548be5ad5db12fdf9c, type: 3}
+  - {fileID: 7321620241028880293, guid: b9d32e0a6ef55474b8de8679eb77374f, type: 3}
+  - {fileID: 793151321935725160, guid: 768adfb52e0d9f54d808a67f160a5cbc, type: 3}
 --- !u!4 &880417299
 Transform:
   m_ObjectHideFlags: 0
@@ -821,8 +827,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a773e17584b9d498a735f56558250d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 17
-  gravityModifier: 2.5
+  jumpForce: 15
+  gravityModifier: 3
   isOnGround: 1
   gameOver: 0
   explosionParticale: {fileID: 307200567}

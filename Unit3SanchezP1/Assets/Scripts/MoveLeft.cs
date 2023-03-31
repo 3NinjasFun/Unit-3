@@ -25,5 +25,13 @@ public class MoveLeft : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if(Input.GetKeyDown(KeyCode.D))
+        {
+            speed = 60;
+        }
+        if(Input.GetKeyUp(KeyCode.D))
+        {
+            speed = 30;
+        }
     }
 }
