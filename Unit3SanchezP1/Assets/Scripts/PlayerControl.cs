@@ -18,6 +18,8 @@ public class PlayerControl : MonoBehaviour
     private AudioSource playerAudio;
     public float jumpBorder;
     private int jumpCounter = 0;
+    public bool Dash;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +45,20 @@ public class PlayerControl : MonoBehaviour
 
         transform.position = new Vector3(jumpBorder, transform.position.y , transform.position.z);
             
-        transform.rotation = Quaternion.Euler(0, 90, 0);
+        transform.rotation = Quaternion.Euler(0, 90, 0); 
+       
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            playerAnim.SetTrigger("Dash_trig");
+
+            Dash = true;
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            playerAnim.SetTrigger("Dash_unTrig");
+
+            Dash = false;
+        }
 
 
     }
